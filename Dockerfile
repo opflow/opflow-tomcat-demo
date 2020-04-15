@@ -5,7 +5,7 @@ FROM tomcat:8.5.4-jre8
 COPY /src/main/resources/tomcat-users.xml /usr/local/tomcat/conf/tomcat-users.xml
 COPY /src/main/resources/context.xml /usr/local/tomcat/webapps/host-manager/META-INF/context.xml
 COPY /src/main/resources/context.xml /usr/local/tomcat/webapps/manager/META-INF/context.xml
-COPY /target/opflow-java-sample-tomcat.war /usr/local/tomcat/webapps/sample-tomcat.war
+COPY /target/opflow-tomcat-demo.war /usr/local/tomcat/webapps/opflow-tomcat-demo.war
 
 EXPOSE 8080
 

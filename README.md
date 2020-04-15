@@ -24,5 +24,9 @@ docker build -t opflow-tomcat-demo .
 docker run --rm -it \
 --name=opflow-tomcat-server \
 -p 8080:8080 \
+-eMASTER_OPFLOW_COMMANDER_HOST=opflow-rabbitmq-server \
+-eMASTER_OPFLOW_COMMANDER_USERNAME=opuser \
+-eMASTER_OPFLOW_COMMANDER_PASSWORD=qwerty \
+-eMASTER_OPFLOW_COMMANDER_VIRTUALHOST=opflow \
 opflow-tomcat-demo:latest
 ```
